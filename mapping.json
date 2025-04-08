@@ -1,0 +1,19 @@
+{
+  "console.log": "cat",
+  "function":    "dev",
+  "return":      "end",
+  "const":       "fix",
+  "let":         "set",
+  "var":         "box",
+  "if":          "ask",
+  "else":        "not",
+  "for":         "run",
+  "while":       "pit",
+  "=>":          "aim",
+  "===":         "fit",
+  "!==":         "odd",
+  "==":          "mix",
+  "!=":          "gap",
+  "&&":          "and",
+  "||":          "yes"    
+}
