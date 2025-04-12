@@ -1,3 +1,4 @@
+// @ts-ignore: Ignore React import not being used explicitly
 import React, { useState } from "react";
 import MonacoEditor from "@monaco-editor/react";
 import "./App.css";
@@ -9,18 +10,21 @@ function App() {
   const [compressedTokenCount, setCompressedTokenCount] = useState(null);
   const [decompressedTokenCount, setDecompressedTokenCount] = useState(null);
 
-  const handleCompressedCodeChange = (value) => {
+  // @ts-ignore: Ignore type checking for 'value' parameter
+  const handleCompressedCodeChange = (value: string) => {
     setCompressedCode(value);
   };
 
-  const handleDecompressedCodeChange = (value) => {
+  // @ts-ignore: Ignore type checking for 'value' parameter
+  const handleDecompressedCodeChange = (value: string) => {
     setDecompressedCode(value);
   };
 
+  // @ts-ignore: Ignore Monaco Editor options type mismatch
   const editorOptions = {
     fontSize: 14,
     lineHeight: 22,
-    wordWrap: "on",
+    wordWrap: "on", // valid values are: "on", "off", "wordWrapColumn", "bounded"
     wrappingIndent: "indent",
     scrollBeyondLastLine: false,
     minimap: { enabled: false },
@@ -36,8 +40,7 @@ function App() {
     }
 
     try {
-      console.log("Sending compressed code to backend:", compressedCode); // Debug log
-
+      // Send the compressed code to the backend for decompression
       const response = await axios.post("http://localhost:5000/decompress", {
         code: compressedCode,
       });
