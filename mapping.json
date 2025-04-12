@@ -1,19 +1,28 @@
+
 {
-  "console.log": "cat",
-  "function":    "dev",
-  "return":      "end",
-  "const":       "fix",
-  "let":         "set",
-  "var":         "box",
-  "if":          "ask",
-  "else":        "not",
-  "for":         "run",
-  "while":       "pit",
-  "=>":          "aim",
-  "===":         "fit",
-  "!==":         "odd",
-  "==":          "mix",
-  "!=":          "gap",
-  "&&":          "and",
-  "||":          "yes"    
+  "console.log":    "LOG",
+  "console.error":  "ERR",
+  "console.warn":   "WARN",
+
+  "function":       "FN",
+  "async":          "ASY",
+  "await":          "AT",
+  "return":         "RUN",
+  "const":          "CNT",
+
+  "class":          "CLS",
+  "constructor":    "CTR",
+
+  "import":         "IMP",
+  "export":         "EXP",
+  "finally":        "FNL",
+  "catch":          "CAT",
+  "throw":          "TH",
+
+  "Promise":        "PRO",
+  "setTimeout":     "SET",
+  "setInterval":    "SIN",
+
+  "JSON.parse":     "JSP",
+  "JSON.stringify":"JST"
 }

@@ -1,16 +1,20 @@
 {
-  "name": "token-compiler",
+  "name": "llm-codec",
   "version": "1.0.0",
-  "description": "",
-  "main": "codec.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "codec": "./cli.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@dqbd/tiktoken": "^1.0.20"
+    "ahocorasick": "^1.0.2",
+    "body-parser": "^2.2.0",
+    "commander": "^9.5.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "fast-glob": "^3.3.3",
+    "tiktoken": "^1.0.20"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
   }
 }

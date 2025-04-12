@@ -1,0 +1,73 @@
+/* src/App.css */
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.editor-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adds space between editors */
+  height: 70vh; /* 70% of viewport height */
+  margin-top: 20px;
+  width: 100%; /* Full width of the container */
+}
+
+.editor {
+  width: 48%; /* Take up 50% of the container's width */
+  height: 100%; /* Ensure full height */
+  background-color: #1e1e1e; /* Dark background for editor */
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.editor h3 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.decompress-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.decompress-btn:hover {
+  background-color: #45a049;
+}
+
+.token-count {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.token-count p {
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .editor-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .editor {
+    width: 100%; /* Full width on small screens */
+    height: 100%; /* Full height on small screens */
+  }
+}
