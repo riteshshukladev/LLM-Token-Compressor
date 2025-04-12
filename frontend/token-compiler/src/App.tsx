@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MonacoEditor from "@monaco-editor/react";
 import "./App.css";
 import axios from "axios";
