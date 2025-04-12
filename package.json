@@ -6,6 +6,7 @@
     "codec": "./cli.js"
   },
   "dependencies": {
+    "@dqbd/tiktoken": "^1.0.20",
     "ahocorasick": "^1.0.2",
     "body-parser": "^2.2.0",
     "commander": "^9.5.0",
